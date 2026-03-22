@@ -92,6 +92,11 @@ Australia has a higher chance due to better recent form and rating.
 
 ---
 
+<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/b6d2e037-27a4-4838-a5a6-4fe0b2a62443" />
+
+<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/eb9bbea3-6fb3-438c-b632-8db95b8d35be" />
+
+
 ## 🚀 Future Improvements
 
 * Live match API integration
