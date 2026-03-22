@@ -1,0 +1,264 @@
+/* Container */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 360px;
+  height: 520px;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.chat-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chat-close-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.chat-close-btn:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Chat Area */
+.chat-area {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Scrollbar Styling */
+.chat-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.chat-area::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Message Row (for avatar + bubble) */
+.chat-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Avatar */
+.chat-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-avatar.user {
+  background: #4CAF50;
+}
+
+.chat-avatar.bot {
+  background: #444;
+}
+
+/* Messages */
+.chat-message {
+  padding: 10px 14px;
+  border-radius: 14px;
+  max-width: 70%;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.chat-message:hover {
+  transform: scale(1.02);
+}
+
+/* User */
+.chat-row.user {
+  justify-content: flex-end;
+}
+
+.chat-message.user {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Bot */
+.chat-row.bot {
+  justify-content: flex-start;
+}
+
+.chat-message.bot {
+  background: #2a2a2a;
+}
+
+/* Input Area */
+.chat-input-area {
+  display: flex;
+  border-top: 1px solid #333;
+  padding: 10px;
+  gap: 8px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+/* Input focus */
+.chat-input:focus {
+  background: #333;
+}
+
+/* Send Button */
+.chat-send-btn {
+  background: #4CAF50;
+  border: none;
+  color: #fff;
+  padding: 0 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-send-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Typing Indicator */
+.typing {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.typing span {
+  width: 8px;
+  height: 8px;
+  background: #94a3b8;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Row alignment */
+.chat-row {
+  display: flex;
+  margin: 8px 0;
+}
+
+/* LEFT (AI) */
+.chat-row.bot {
+  justify-content: flex-start;
+}
+
+/* RIGHT (User) */
+.chat-row.user {
+  justify-content: flex-end;
+}
+
+/* Bubble common */
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* User bubble (RIGHT) */
+.chat-row.user .chat-bubble {
+  background: #2563eb;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bot bubble (LEFT) */
+.chat-row.bot .chat-bubble {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-row.bot::before {
+  content: "🤖";
+  font-size: 24px;
+}
+
+.chat-row.user::after {
+  content: "🧑🏻";
+  font-size: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

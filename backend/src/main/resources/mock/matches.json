@@ -1,0 +1,64 @@
+[
+    {
+        "id": "50e51748-6f5b-4b89-865e-91c82f292d6c",
+        "name": "Bangladesh vs New Zealand, 3rd T20I, New Zealand tour of Bangladesh, 2026",
+        "matchType": "odi",
+        "status": "Match starts at May 02, 12:30 GMT",
+        "venue": "Shere Bangla National Stadium, Dhaka",
+        "date": "2026-05-02",
+        "dateTimeGMT": "2026-05-02T12:30:00",
+        "teams": [
+            "Bangladesh",
+            "New Zealand"
+        ],
+        "teamInfo": [
+            {
+                "name": "Bangladesh",
+                "shortname": "BAN",
+                "img": "https://g.cricapi.com/iapi/9-637877074109248302.webp?w=48"
+            },
+            {
+                "name": "New Zealand",
+                "shortname": "NZ",
+                "img": "https://g.cricapi.com/iapi/57-637877076980737903.webp?w=48"
+            }
+        ],
+        "series_id": "d5c0239d-9840-417b-ad8f-865cc3927ff4",
+        "fantasyEnabled": false,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": false,
+        "matchEnded": false
+    },
+    {
+        "id": "50e51748-6f5b-4b89-865e-91c82f292d6c",
+        "name": "Australia vs South Africa, 3rd T20I, South Africa tour of Australia, 2026",
+        "matchType": "odi",
+        "status": "Match starts at May 02, 12:30 GMT",
+        "venue": "Australia",
+        "date": "2026-05-02",
+        "dateTimeGMT": "2026-05-02T12:30:00",
+        "teams": [
+            "Australia",
+            "South Africa"
+        ],
+        "teamInfo": [
+            {
+                "name": "Australia",
+                "shortname": "AUS",
+                "img": "https://g.cricapi.com/iapi/9-637877074109248302.webp?w=48"
+            },
+            {
+                "name": "South Africa",
+                "shortname": "SA",
+                "img": "https://g.cricapi.com/iapi/57-637877076980737903.webp?w=48"
+            }
+        ],
+        "series_id": "d5c0239d-9840-417b-ad8f-865cc3927ff4",
+        "fantasyEnabled": false,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": false,
+        "matchEnded": false
+    }
+]

@@ -1,0 +1,57 @@
+# ===============================
+# 🔥 OS / General
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# 🔥 IDE Files
+# ===============================
+.idea/
+.vscode/
+*.iml
+
+# ===============================
+# 🔥 Logs
+# ===============================
+logs/
+*.log
+
+# ===============================
+# 🔥 Environment Files
+# ===============================
+.env
+.env.*
+backend/src/main/resources/application.properties
+
+# ===============================
+# 🔥 Java / Spring Boot
+# ===============================
+backend/target/
+backend/*.log
+
+# Maven wrapper (optional keep or ignore)
+# If you want to ignore:
+# backend/.mvn/
+# backend/mvnw
+# backend/mvnw.cmd
+
+# ===============================
+# 🔥 Node / React
+# ===============================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# ===============================
+# 🔥 Cache / Temp
+# ===============================
+*.tmp
+*.temp
+.cache/
+
+# ===============================
+# 🔥 Package lock files (optional)
+# ===============================
+# frontend/package-lock.json
+# frontend/yarn.lock

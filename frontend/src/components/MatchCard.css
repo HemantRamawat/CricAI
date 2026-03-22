@@ -1,0 +1,105 @@
+  .match-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+  }
+
+  .match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .badge {
+    /* background: #2d792d; */
+    color: white;
+    padding: 4px 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 10px;
+    /* font-weight: bold; */
+  }
+
+  .meta {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #94a3b8;
+  }
+
+  .team {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .flag {
+    width: 26px;
+    height: 18px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+
+  .bar-container {
+    height: 8px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 6px 0;
+  }
+
+  .bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.6s ease;
+  }
+
+  .teamA {
+    background: linear-gradient(90deg, #22c55e, #4ade80);
+  }
+
+  .teamB {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  }
+
+  .score {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .prediction {
+    margin-top: 14px;
+    font-weight: 600;
+    color: #22c55e;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.12);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+  }
+
+  .askAI {
+    margin-top: 10px;
+  }
+
+  .askAI_button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .flag {
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
